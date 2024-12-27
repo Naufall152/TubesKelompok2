@@ -31,6 +31,12 @@
                     <a class="nav-link" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/lokasi">Lokasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">List Instansi</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/donasi">Donasi</a>
                 </li>
                 <li class="nav-item">
