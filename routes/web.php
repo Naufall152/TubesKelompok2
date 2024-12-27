@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('coba');
 });
+
+Route::get('/lokasi', function () {
+    return view('lokasi');
+});
