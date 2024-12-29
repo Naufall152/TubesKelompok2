@@ -37,10 +37,10 @@
                     <a class="nav-link" href="/">List Instansi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/donasi">Donasi</a>
+                    <a class="nav-link" href="{{ route('donasi') }}">Donasi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/donatur">List Donatur</a>
+                    <a class="nav-link" href="{{ route('list.donasi') }}">List Donasi</a>
                 </li>
 
                 @if (Auth::check())
