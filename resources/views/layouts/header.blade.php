@@ -19,7 +19,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="/"><img src="/images/layout/main-logo.png" width="320" /></a>
+        <a class="navbar-brand" href="/"><img src="{{ Vite::asset('resources/images/food.png') }}" width="200"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -154,3 +154,4 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.096), 0 6px 20px rgba(0, 0, 0, 0.096);
     }
 </style>
+@vite('resources/js/app.js')
