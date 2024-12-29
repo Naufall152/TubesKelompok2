@@ -37,16 +37,16 @@
                 </div>
 
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="{{ Vite::asset('resources/images/gambar1.jpg') }}"
+                <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ Vite::asset('resources/images/1.jpg') }}"
                             alt="gambar1">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ Vite::asset('resources/images/gambar2.jpg') }}"
+                        <img class="d-block w-100" src="{{ Vite::asset('resources/images/2.jpg') }}"
                             alt="gambar1">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ Vite::asset('resources/images/gambar3.jpg') }}"
+                        <img class="d-block w-100" src="{{ Vite::asset('resources/images/3.jpg') }}"
                             alt="gambar1">
                     </div>
                 </div>

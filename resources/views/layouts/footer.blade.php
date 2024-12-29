@@ -17,8 +17,8 @@
         <div class="row">
             <!-- Logo dan Deskripsi -->
             <div class="col-md-4 mb-3">
-                <h5 class="text-uppercase">Nama Proyek</h5>
-                <p>Proyek Laravel sederhana untuk menampilkan fitur modern dengan dukungan Bootstrap.</p>
+                <h5 class="text-uppercase">FoodForAll</h5>
+                <p>Adalah sebuah website yang menampilkan beragam blog dan membantu orang yang kekurangan makanan.</p>
             </div>
 
             <!-- Navigasi -->
