@@ -19,7 +19,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="/"><img src="{{ Vite::asset('resources/images/food.png') }}" width="200"/></a>
+        <a class="navbar-brand" href="/"><img src="{{ Vite::asset('resources/images/food.png') }}" width="320" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Beranda</a>
+                    <a class="nav-link" href="{{ route('home') }}">Beranda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/lokasi">Lokasi</a>
@@ -54,7 +54,7 @@
                             @if (Auth::user()->jenisAkun === 'admin')
                                 <a class="dropdown-item" href="/dashboard">Dashboard</a>
                             @endif
-                            <a class="dropdown-item" href="/session/logout">Logout</a>
+                            <a class="dropdown-item" href="/session/login">Logout</a>
                         </div>
                     </li>
                 @else
@@ -154,4 +154,4 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.096), 0 6px 20px rgba(0, 0, 0, 0.096);
     }
 </style>
-@vite('resources/js/app.js')
+
