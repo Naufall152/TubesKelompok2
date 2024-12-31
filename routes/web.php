@@ -5,6 +5,9 @@ use App\Http\Controllers\DonationController;
 use App\Http\Controllers\DonasiTunaiController;
 use App\Http\Controllers\DonasiMakananController;
 use App\Http\Controllers\ListDonasiController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Auth\RegisterController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +20,7 @@ use App\Http\Controllers\ListDonasiController;
 */
 
 Route::get('/', function () {
-    return view('coba');
+    return view('login');
 });
 
 Route::get('/lokasi', function () {
@@ -40,3 +43,13 @@ Route::get('/donasi/tunai', function () {
 Route::post('/donasi-tunai', [DonasiTunaiController::class, 'store'])->name('donasi.tunai.store');
 Route::post('/donasi-makanan', [DonasiMakananController::class, 'store'])->name('donasi.makanan.store');
 Route::get('/list-donasi', [ListDonasiController::class, 'index'])->name('list.donasi');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Menampilkan form register
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+
+// Proses registrasi
+Route::post('/register', [RegisterController::class, 'register']);
